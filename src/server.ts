@@ -2,11 +2,11 @@
 import express from 'express';
 import cors from 'cors';
 import { PrismaClient } from '@prisma/client';
-import authRoutes from './routes/auth';
-import financialDataRoutes from './routes/financialData';
-import historicalDataRoutes from './routes/historicalData';
-import financialDecisionRoutes from './routes/financialDecisions';
-import scenarioRoutes from './routes/scenarios';
+import authRoutes from '../src/routes/auth';
+import financialDataRoutes from '../src/routes/financialdata';
+import historicalDataRoutes from '../src/routes/historicalData';
+import financialDecisionRoutes from '../src/routes/financialDecisions';
+import scenarioRoutes from '../src/routes/scenarios';
 import authenticateUser from '../src/routes/auth';
 
 export const prisma = new PrismaClient();
