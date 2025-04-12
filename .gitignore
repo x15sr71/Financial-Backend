@@ -19,3 +19,8 @@ prisma/dev.db-journal
 .env.local
 .env.development
 .env.production
+
+node_modules
+.env
+dist
+
