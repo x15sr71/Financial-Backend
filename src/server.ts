@@ -7,7 +7,7 @@ import financialDataRoutes from './routes/financialData';
 import historicalDataRoutes from './routes/historicalData';
 import financialDecisionRoutes from './routes/financialDecisions';
 import scenarioRoutes from './routes/scenarios';
-import { authenticateUser } from './middleware/auth';
+import authenticateUser from '../src/routes/auth';
 
 export const prisma = new PrismaClient();
 const app = express();
